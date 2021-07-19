@@ -10,4 +10,10 @@ module.exports = {
     baseUrl: '/cobi-banner',
     out: './build',
   },
+  plugins: [
+    ['snowpack-plugin-posthtml', {
+      root: './src/',
+      encoding: 'utf-8'
+    }]
+  ],
 }

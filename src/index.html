@@ -5,29 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoBi-Banner</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sitebar.css">
 </head>
 <body>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1020px 210px 1fr;
+        }
+
+        .page {
+            background-color: #ccc;
+            text-align: center;
+            color: #fff6;
+            font-size: 100px;
+            height: 200vh;
+        }
+
+        .sitebar {
+            grid-column: 3 / span 2;
+        }
+    </style>
 
     <div><!-- left gutter --></div>
+
     <div class="page">page</div>
 
-    <div class="sitebar">
-        <div class="sitebar__onlyshorttime">Nur für kurze Zeit</div>
-        <img class="sitebar__headline" src="free-software.png">
-        <div class="sitebar__subheadline">Wer sagt, dass gute Software<br>immer Geld kosten muss?</div>
-        <div class="sitebar__subsubheadline">Software <strong>im Wert von<br>149,95 €</strong> geschenkt!</div>
-
-        <div class="sitebar__boxes">
-            <div class="slider"></div>
-        </div>
-
-        <a href="#" class="sitebar__button">Jetzt kostenlose<br>Vollversionen sichern</a>
-        <div class="sitebar__footer">
-            <img class="logo" src="https://img.ashampoo.com/assets/images/main/ashampoo_logo_black_rgb.svg">
-            <div class="slogan">// Home of Software</div>
-        </div>
-    </div>
+    <include src="_sitebar.html"></include>
 
 </body>
 </html>

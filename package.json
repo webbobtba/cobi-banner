@@ -5,6 +5,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "snowpack": "^3.8.2"
+    "posthtml-include": "^1.7.1",
+    "snowpack": "^3.8.2",
+    "snowpack-plugin-posthtml": "^0.1.0"
   }
 }
