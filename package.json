@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "npx snowpack dev",
+    "build": "npx snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "snowpack": "^3.8.2"
+  }
+}

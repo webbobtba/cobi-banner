@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    /*
+    display: grid;
+    grid-template-columns: 1fr 420px minmax(210px, 1fr);
+    */
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+/*
+.page {
+    column: 2;
+    background-color: #ccc;
+    text-align: center;
+    color: #fff6;
+    font-size: 100px;
+}
+*/
+
+.sitebar {
+    /*column: 3;*/
+    background-color: blue;
+    height: 600px;
+    font-size: 80px;
+    color: #fff6;
+    overflow: hidden;
+}
