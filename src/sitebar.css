@@ -27,7 +27,7 @@ body {
     box-shadow: 0 0 0 3px #e7e7e7 inset;
 
     background-image:
-        url('lime.png'),
+        url('lime.min.png'),
         url('ferns-left.min.png'),
         url('ferns-right.min.png')
     ;
