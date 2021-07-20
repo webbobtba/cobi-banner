@@ -16,4 +16,9 @@ module.exports = {
       encoding: 'utf-8'
     }]
   ],
+  optimize: {
+    bundle: true,
+    minify: true,
+    target: 'es2018',
+  },
 }
