@@ -8,9 +8,27 @@
         <div class="slider"></div>
     </div>
 
-    <a href="https://www.ashampoo.com/cookie/ZCQdfFDxSW9zlKiA?redirect=https%3A%2F%2Fwww.ashampoo.com%2Ffree-software%3Fx-source%3Dcobidisplay072021" target="_blank" class="sitebar__button">Jetzt kostenlose<br>Vollversionen sichern</a>
+    <a href="#" id="clicktag" class="sitebar__button">Jetzt kostenlose<br>Vollversionen sichern</a>
     <div class="sitebar__footer">
         <img class="logo" src="https://img.ashampoo.com/assets/images/main/ashampoo_logo_black_rgb.svg">
         <div class="slogan">// Home of Software</div>
     </div>
 </div>
+
+<script>
+    var getUriParams = function () {
+        var query_string = {}
+        var query = window.location.search.substring(1);
+        var parmsArray = query.split('&');
+        if (parmsArray.length <= 0) return query_string;
+        for (var i = 0; i < parmsArray.length; i++) {
+            var pair = parmsArray[i].split('=');
+            var val = decodeURIComponent(pair[1]);
+            if (val != '' && pair[0] != '') query_string[pair[0]] = val;
+        }
+        return query_string;
+    }();
+
+    document.getElementById('clicktag').setAttribute('href', getUriParams.clicktag);
+    document.getElementById('clicktag').setAttribute('target', getUriParams.target);
+</script>
